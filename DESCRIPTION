@@ -12,3 +12,6 @@ Imports:
     magrittr
 URL: https://github.com/KevinNavarreteParra/voteR
 BugReports: https://github.com/KevinNavarreteParra/voteR/issues
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
