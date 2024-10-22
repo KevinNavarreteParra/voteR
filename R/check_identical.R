@@ -1,6 +1,6 @@
-#' Title: Check for identical rows in a data frame
+#' Check for identical rows in a data frame
 #'
-#' @description
+#'@description
 #' This function takes as an input tabular data with variables corresponding to ballot-level voting patterns and returns the number of identical rows in the data frame. The purpose is to identify the number of permutations for which there are $n$ number of duplicates.
 #'
 #'
@@ -8,6 +8,23 @@
 #' @param dup_num A numeric value indicating the number of identical rows to check for
 #' @param logical A character value indicating the logical operator to use. Must be one of 'greater', 'equal', or 'less'
 #' @param name A character value indicating the name of the column to create in the output data frame. Default is 'count'
+#'
+#' @details
+#' There are several reasons why two people can have identical ballot patterns:
+#'
+#' - Random Chance: In elections where candidates are listed in a random order or where options are chosen randomly (like in some lotteries or local elections), individuals can have identical ballot patterns purely by chance.
+#'
+#' - Limited Choices: In elections with a limited number of candidates or options, especially in smaller or local elections, the ballot choices may be more constrained, increasing the likelihood of identical patterns.
+#'
+#' - Similar Preferences: Voters with similar political or social views may independently arrive at the same choices when presented with similar candidates or issues on the ballot.
+#'
+#' - Influence of Campaigns or Media: Voter decisions can be influenced by similar campaign messaging, media coverage, or public opinion, leading to identical voting patterns among groups of voters.
+#'
+#' - Voter Guides or Recommendations: Voters may consult the same voter guides, endorsements, or recommendations from trusted sources, resulting in similar ballot selections.
+#'
+#' - Strategic Voting: In some cases, voters may strategically choose candidates based on perceived electability or other strategic considerations, leading to similar ballot patterns.
+#'
+#' These factors can contribute to the occurrence of identical ballot patterns among different voters, even in diverse electoral contexts. The mere presence of identical ballot patterns does not necessarily indicate fraud or malfeasance.
 #'
 #' @return A numeric value indicating the number of identical rows in the data frame
 #' @export
