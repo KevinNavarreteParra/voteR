@@ -1,7 +1,7 @@
 #' Check for identical rows in a data frame
 #'
 #'@description
-#' This function takes as an input tabular data with variables corresponding to ballot-level voting patterns and returns the number of identical rows in the data frame. The purpose is to identify the number of permutations for which there are $n$ number of duplicates.
+#' This function takes as an input tabular data with variables corresponding to ballot-level voting patterns and returns the number of identical rows in the data frame. The purpose is to identify the number of permutations for which there are n number of duplicates.
 #'
 #'
 #' @param data An object of class data frame
@@ -33,7 +33,7 @@
 #'
 #' @examples
 #' data <- data.frame(a = c(1, 2, 3, 4, 5, 1, 2, 3, 4, 5),
-#'                   b = c(1, 2, 3, 4, 5, 1, 2, 3, 4, 5))
+#'                    b = c(1, 2, 3, 4, 5, 1, 2, 3, 4, 5))
 #'
 #' check_identical(data, 2, "greater")
 check_identical <- function(data, dup_num, logical, name = "count") {
